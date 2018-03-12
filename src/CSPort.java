@@ -9,6 +9,7 @@ Model as singleton? Or pass to constructors?
 // ***** Imports
 import java.io.*; // Exceptions, etc
 import java.util.*;
+import gnu.io.CommPortIdentifier;
 import gnu.io.*; // RXTX
 
 class CSPort {
