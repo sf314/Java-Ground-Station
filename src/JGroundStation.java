@@ -12,7 +12,6 @@ Running on Java version 1.8.0_131
 import java.io.*;
 import java.util.*;
 import gnu.io.*;
-import gnu.io.CommPortIdentifier;
 
 import javax.swing.*;
 import java.awt.*;

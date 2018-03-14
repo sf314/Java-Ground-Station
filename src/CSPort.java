@@ -9,18 +9,18 @@ Model as singleton? Or pass to constructors?
 // ***** Imports
 import java.io.*; // Exceptions, etc
 import java.util.*;
-import gnu.io.CommPortIdentifier;
 import gnu.io.*; // RXTX
+//import javax.comm.*;
 
 class CSPort {
     // Data vars
     SerialPort port;
-    
-    // Constructor 
+
+    // Constructor
     public CSPort() {
-        
+
     }
-    
+
     // List available ports
     public String[] availablePorts() {
         ArrayList<String> list = new ArrayList<String>();
@@ -29,14 +29,14 @@ class CSPort {
             CommPortIdentifier pIdentifier = portEnum.nextElement();
             list.add(pIdentifier.getName());
         }
-        
+
         // Cast to Array and return
         String[] temp = new String[list.size()];
         return list.toArray(temp);
     }
-    
+
     // Connect to a port given a string
     public void connect(String str) {
-        
+
     }
 }
