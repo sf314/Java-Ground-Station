@@ -27,13 +27,16 @@ public class JGroundStation {
 
         // Setup main frame and sub-panels
         JFrame mainFrame = new JFrame("Main Frame");
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainFrame.setSize(800, 600);
 
         // Create two subpanels:
         JPanel panel1 = new JPanel();
         JPanel panel2 = new JPanel();
+        JLabel label = new JLabel("Pick me, ei ei!");
+        mainFrame.add(label);
 
         // Make it visible
-        mainFrame.setSize(800, 600);
         mainFrame.setVisible(true);
 
         // Test array

@@ -10,15 +10,16 @@ Model as singleton? Or pass to constructors?
 import java.io.*; // Exceptions, etc
 import java.util.*;
 import gnu.io.*; // RXTX
-//import javax.comm.*;
 
 class CSPort {
     // Data vars
     SerialPort port;
+    boolean isConnected;
 
     // Constructor
     public CSPort() {
-
+        port = null;
+        isConnected = false;
     }
 
     // List available ports
@@ -36,7 +37,21 @@ class CSPort {
     }
 
     // Connect to a port given a string
-    public void connect(String str) {
-
+    public void connect(String str) throws IOException, NoSuchPortException, PortInUseException, UnsupportedCommOperationException {
+        // Try/catch stuff, start new thread!
+        System.out.println("Connect()");
+    }
+    
+    // Funcs for ease of use
+    public boolean available() {
+        return false;
+    }
+    
+    public String read() {
+        return "";
+    }
+    
+    public void close() {
+        return;
     }
 }
